@@ -1,0 +1,899 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B1575FF23FB6C3100E9ECF5 /* MyPolygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1575FE23FB6C3100E9ECF5 /* MyPolygon.swift */; };
+		0B15760123FCB73F00E9ECF5 /* TrackBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B15760023FCB73E00E9ECF5 /* TrackBall.swift */; };
+		0B16083C23F46C1000659644 /* train-color.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B16083B23F46C1000659644 /* train-color.png */; };
+		0B382F4F23FDDCED00CF60D4 /* Q.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B382F3523FDD76200CF60D4 /* Q.png */; };
+		0B382F5023FDDCEE00CF60D4 /* C.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B382F3623FDD79700CF60D4 /* C.png */; };
+		0B382F5123FDDCEE00CF60D4 /* U.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B382F3723FDD7C300CF60D4 /* U.png */; };
+		0B382F5423FDDCEE00CF60D4 /* X.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B382F3A23FDD84F00CF60D4 /* X.png */; };
+		0B382F5A23FDDCEE00CF60D4 /* F.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B382F4023FDD9A400CF60D4 /* F.png */; };
+		0B382F5B23FDDCEE00CF60D4 /* W.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B382F4123FDD9D800CF60D4 /* W.png */; };
+		0B382F5D23FDDCEE00CF60D4 /* J.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B382F4323FDDA4F00CF60D4 /* J.png */; };
+		0B382F6023FDDCEE00CF60D4 /* O.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B382F4623FDDB2200CF60D4 /* O.png */; };
+		0B382F6123FDDCEE00CF60D4 /* I.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B382F4723FDDB6100CF60D4 /* I.png */; };
+		0B382F6223FDDCEE00CF60D4 /* B.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B382F4823FDDBA500CF60D4 /* B.png */; };
+		0B382F6323FDDCEE00CF60D4 /* P.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B382F4923FDDBDA00CF60D4 /* P.png */; };
+		0B382F6423FDDCEE00CF60D4 /* V.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B382F4A23FDDC1600CF60D4 /* V.png */; };
+		0B382F6523FDDCEE00CF60D4 /* G.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B382F4B23FDDC4E00CF60D4 /* G.png */; };
+		0B38EAFF23FD756300CF60D4 /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B38EAFE23FD756300CF60D4 /* AppController.swift */; };
+		0B38EB0123FD785C00CF60D4 /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B38EB0023FD785C00CF60D4 /* Words.swift */; };
+		0B38EB0323FD902100CF60D4 /* SQLiteDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B38EB0223FD902100CF60D4 /* SQLiteDatabase.swift */; };
+		0B38EB0623FDB2B300CF60D4 /* data.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0B38EB0523FDB2B300CF60D4 /* data.sqlite */; };
+		0B38EB1823FDB32200CF60D4 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B38EB0723FDB2CB00CF60D4 /* Icon.png */; };
+		0B38EB1923FDB32200CF60D4 /* JumpToLevel.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B38EB0823FDB2D000CF60D4 /* JumpToLevel.png */; };
+		0B38EB1A23FDB32200CF60D4 /* bamboo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B38EB0923FDB2D400CF60D4 /* bamboo.png */; };
+		0B38EB1B23FDB32200CF60D4 /* metal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B38EB0A23FDB2D900CF60D4 /* metal.png */; };
+		0B38EB1C23FDB32200CF60D4 /* StartNewGame.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B38EB0B23FDB2DF00CF60D4 /* StartNewGame.png */; };
+		0B38EB1D23FDB32200CF60D4 /* lino.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B38EB0C23FDB2E400CF60D4 /* lino.png */; };
+		0B38EB1E23FDB32200CF60D4 /* ResumeGame.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B38EB0D23FDB2EB00CF60D4 /* ResumeGame.png */; };
+		0B38EB1F23FDB32200CF60D4 /* Options.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B38EB0E23FDB2F100CF60D4 /* Options.png */; };
+		0B38EB2023FDB32200CF60D4 /* Guide.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B38EB0F23FDB2F700CF60D4 /* Guide.png */; };
+		0B38EB2123FDB32200CF60D4 /* Alpha5.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B38EB1023FDB2FD00CF60D4 /* Alpha5.png */; };
+		0B38EB2223FDB32200CF60D4 /* whiteButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B38EB1123FDB30200CF60D4 /* whiteButton.png */; };
+		0B38EB2323FDB32200CF60D4 /* blueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B38EB1223FDB30900CF60D4 /* blueButton.png */; };
+		0B38EB2423FDB32200CF60D4 /* Alpha4.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B38EB1323FDB30E00CF60D4 /* Alpha4.png */; };
+		0B38EB2523FDB32200CF60D4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B38EB1423FDB30E00CF60D4 /* Info.plist */; };
+		0B38EB2623FDB32200CF60D4 /* wordlist.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0B38EB1523FDB31500CF60D4 /* wordlist.sqlite */; };
+		0B38EB2723FDB32200CF60D4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B38EB1623FDB31B00CF60D4 /* Default.png */; };
+		0B38EB2823FDB32200CF60D4 /* HighScores.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B38EB1723FDB32200CF60D4 /* HighScores.png */; };
+		0B6F7BDB23F43F5A00DEFA61 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6F7BDA23F43F5A00DEFA61 /* Node.swift */; };
+		0B6F7BDD23F4418100DEFA61 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6F7BDC23F4418100DEFA61 /* Scene.swift */; };
+		0B6F7BDF23F4418F00DEFA61 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6F7BDE23F4418F00DEFA61 /* GameScene.swift */; };
+		0B6F7BE123F441C800DEFA61 /* Renderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6F7BE023F441C800DEFA61 /* Renderable.swift */; };
+		0B6F7BE423F4561F00DEFA61 /* Mesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6F7BE323F4561F00DEFA61 /* Mesh.swift */; };
+		0B8D753F23FE436F00B57559 /* Title1.obj in Resources */ = {isa = PBXBuildFile; fileRef = 0B8D753E23FE436F00B57559 /* Title1.obj */; };
+		0B8D754123FE452200B57559 /* TitleQuad.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 0B8D754023FE452200B57559 /* TitleQuad.mtl */; };
+		0B8D754423FE4A3700B57559 /* Quad2.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 0B8D754223FE4A3700B57559 /* Quad2.mtl */; };
+		0B8D754523FE4A3700B57559 /* Quad2.obj in Resources */ = {isa = PBXBuildFile; fileRef = 0B8D754323FE4A3700B57559 /* Quad2.obj */; };
+		0B8D754723FEF8C900B57559 /* Title2.obj in Resources */ = {isa = PBXBuildFile; fileRef = 0B8D754623FEF8C900B57559 /* Title2.obj */; };
+		0B8D754923FEF90B00B57559 /* Title3.obj in Resources */ = {isa = PBXBuildFile; fileRef = 0B8D754823FEF90B00B57559 /* Title3.obj */; };
+		0B8D754B23FEF94B00B57559 /* Title5.obj in Resources */ = {isa = PBXBuildFile; fileRef = 0B8D754A23FEF94B00B57559 /* Title5.obj */; };
+		0B8D754D23FEF98500B57559 /* Title4.obj in Resources */ = {isa = PBXBuildFile; fileRef = 0B8D754C23FEF98500B57559 /* Title4.obj */; };
+		0BB1978F23F8DC6700676034 /* wood_original.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0BB1978C23F8DC6600676034 /* wood_original.jpg */; };
+		0BB1979D23F9EB3A00676034 /* TestPolyhedron.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 0BB1979B23F9EB3A00676034 /* TestPolyhedron.mtl */; };
+		0BB1979E23F9EB3A00676034 /* TestPolyhedron.obj in Resources */ = {isa = PBXBuildFile; fileRef = 0BB1979C23F9EB3A00676034 /* TestPolyhedron.obj */; };
+		0BBFE0C123F78F0000850FB9 /* Polyhedron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBFE0C023F78F0000850FB9 /* Polyhedron.swift */; };
+		0BBFE0C323F79E6600850FB9 /* BasePolygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBFE0C223F79E6600850FB9 /* BasePolygon.swift */; };
+		0BD2B9D523FCF922009E869E /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2B9D423FCF922009E869E /* ButtonView.swift */; };
+		0BEC0E4623F3040A00B76223 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEC0E4523F3040A00B76223 /* Extensions.swift */; };
+		0BEC0E4823F31B6500B76223 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEC0E4723F31B6500B76223 /* Model.swift */; };
+		0BEC0E4B23F31ED800B76223 /* train.obj in Resources */ = {isa = PBXBuildFile; fileRef = 0BEC0E4923F31ED800B76223 /* train.obj */; };
+		0BEC0E4C23F31ED800B76223 /* train.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 0BEC0E4A23F31ED800B76223 /* train.mtl */; };
+		0BEC0E4F23F32A2400B76223 /* MathLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEC0E4E23F32A2400B76223 /* MathLibrary.swift */; };
+		0BEC0E5223F32A3900B76223 /* treefir.obj in Resources */ = {isa = PBXBuildFile; fileRef = 0BEC0E5023F32A3900B76223 /* treefir.obj */; };
+		0BEC0E5323F32A3900B76223 /* treefir.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 0BEC0E5123F32A3900B76223 /* treefir.mtl */; };
+		0BEC0E5523F32BA300B76223 /* Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEC0E5423F32BA300B76223 /* Transform.swift */; };
+		0BEC0E5723F337C000B76223 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEC0E5623F337C000B76223 /* Camera.swift */; };
+		0BF3334023F1CF9A00FA5247 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF3333F23F1CF9A00FA5247 /* AppDelegate.swift */; };
+		0BF3334223F1CF9A00FA5247 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF3334123F1CF9A00FA5247 /* ViewController.swift */; };
+		0BF3334423F1CF9E00FA5247 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BF3334323F1CF9E00FA5247 /* Assets.xcassets */; };
+		0BF3334723F1CF9E00FA5247 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BF3334523F1CF9E00FA5247 /* Main.storyboard */; };
+		0BF3335023F1D08B00FA5247 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF3334F23F1D08B00FA5247 /* Renderer.swift */; };
+		0BF3335223F1D94800FA5247 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 0BF3335123F1D94800FA5247 /* Shaders.metal */; };
+		0BFC49C523FDE20600A150FB /* A.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC49C423FDE20500A150FB /* A.png */; };
+		0BFC49C823FDE28C00A150FB /* H.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC49C723FDE28B00A150FB /* H.png */; };
+		0BFC49CA23FDE2C500A150FB /* E.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC49C623FDE24C00A150FB /* E.png */; };
+		0BFC49CB23FDE2C500A150FB /* D.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC49C923FDE2C300A150FB /* D.png */; };
+		0BFC49D223FDE3D800A150FB /* N.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC49D123FDE3D700A150FB /* N.png */; };
+		0BFC49D523FDE40C00A150FB /* M.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC49CC23FDE30600A150FB /* M.png */; };
+		0BFC49D623FDE40C00A150FB /* L.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC49CD23FDE33600A150FB /* L.png */; };
+		0BFC49DB23FDE4A200A150FB /* Z.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC49D823FDE44D00A150FB /* Z.png */; };
+		0BFC49DC23FDE4A200A150FB /* Y.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC49DA23FDE4A000A150FB /* Y.png */; };
+		0BFC49DF23FDE4FE00A150FB /* R.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC49D323FDE40A00A150FB /* R.png */; };
+		0BFC49E023FDE4FE00A150FB /* S.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC49D923FDE47500A150FB /* S.png */; };
+		0BFC49E123FDE4FE00A150FB /* T.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC49DD23FDE4FA00A150FB /* T.png */; };
+		0BFC49F323FDE8EB00A150FB /* Cube.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC49F223FDE8EA00A150FB /* Cube.png */; };
+		0BFC4A0423FDED4700A150FB /* Drilled Truncated Dodecahedron.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC49F523FDE96F00A150FB /* Drilled Truncated Dodecahedron.png */; };
+		0BFC4A0523FDED4700A150FB /* Dodecahedron.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC49F723FDE9C500A150FB /* Dodecahedron.png */; };
+		0BFC4A0623FDED4700A150FB /* Disdyakisdodecahedron.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC49F923FDEA2800A150FB /* Disdyakisdodecahedron.png */; };
+		0BFC4A0723FDED4700A150FB /* Cupola-Drilled Truncated Icosidodecahedron.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC49FB23FDEA8F00A150FB /* Cupola-Drilled Truncated Icosidodecahedron.png */; };
+		0BFC4A0823FDED4700A150FB /* Drilled Truncated Cube.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC49FD23FDEB2500A150FB /* Drilled Truncated Cube.png */; };
+		0BFC4A0923FDED4700A150FB /* Eight-Octahedron Ring.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC49FF23FDEBD900A150FB /* Eight-Octahedron Ring.png */; };
+		0BFC4A0A23FDED4700A150FB /* Deca-faced Polyhedron.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC4A0123FDECA300A150FB /* Deca-faced Polyhedron.png */; };
+		0BFC4A0B23FDED4700A150FB /* Cuboctahedron.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC4A0323FDED4700A150FB /* Cuboctahedron.png */; };
+		0BFC4A2223FDEFF200A150FB /* Great Dodecacronic Hexecontahedron.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC49E423FDE56800A150FB /* Great Dodecacronic Hexecontahedron.png */; };
+		0BFC4A2323FDEFF200A150FB /* Nameless Blob.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC49E523FDE5AA00A150FB /* Nameless Blob.png */; };
+		0BFC4A2423FDEFF200A150FB /* Small Dodecahemicosahedron.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC49E623FDE5D900A150FB /* Small Dodecahemicosahedron.png */; };
+		0BFC4A2523FDEFF200A150FB /* Truncated Octahedron 8.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC49E723FDE60600A150FB /* Truncated Octahedron 8.png */; };
+		0BFC4A2623FDEFF200A150FB /* Gyro-Expanded Cuboctahedron.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC49E823FDE63100A150FB /* Gyro-Expanded Cuboctahedron.png */; };
+		0BFC4A2723FDEFF200A150FB /* Octagon-Drilled Truncated Cuboctahedron.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC49E923FDE66000A150FB /* Octagon-Drilled Truncated Cuboctahedron.png */; };
+		0BFC4A2823FDEFF200A150FB /* Strombic Hexecontahedron.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC49EA23FDE68A00A150FB /* Strombic Hexecontahedron.png */; };
+		0BFC4A2923FDEFF200A150FB /* Truncated Icosidodecahedron.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC49EB23FDE6B100A150FB /* Truncated Icosidodecahedron.png */; };
+		0BFC4A2A23FDEFF200A150FB /* Rhombicosidodecahedron.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC49EC23FDE6DC00A150FB /* Rhombicosidodecahedron.png */; };
+		0BFC4A2B23FDEFF200A150FB /* Gyro-Double-Expanded Cuboctahedron.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC49ED23FDE71000A150FB /* Gyro-Double-Expanded Cuboctahedron.png */; };
+		0BFC4A2C23FDEFF200A150FB /* Octahedron.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC49EE23FDE73A00A150FB /* Octahedron.png */; };
+		0BFC4A2D23FDEFF200A150FB /* Gyroelongated Pentagonal Rotunda.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC49EF23FDE76E00A150FB /* Gyroelongated Pentagonal Rotunda.png */; };
+		0BFC4A2E23FDEFF200A150FB /* Antiprism-Extended Dodecahedrahedron Ring.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC49F023FDE7DD00A150FB /* Antiprism-Extended Dodecahedrahedron Ring.png */; };
+		0BFC4A2F23FDEFF200A150FB /* Heptagonal Petals.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC49F123FDE89300A150FB /* Heptagonal Petals.png */; };
+		0BFC4A3023FDEFF200A150FB /* Pentagonal Orthobirotunda.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC49F423FDE93200A150FB /* Pentagonal Orthobirotunda.png */; };
+		0BFC4A3123FDEFF200A150FB /* Icosahedra 8-ring.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC49F623FDE99900A150FB /* Icosahedra 8-ring.png */; };
+		0BFC4A3223FDEFF200A150FB /* Tetrakishexahedron.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC49F823FDE9F800A150FB /* Tetrakishexahedron.png */; };
+		0BFC4A3323FDEFF200A150FB /* Torus Slice.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC49FA23FDEA6100A150FB /* Torus Slice.png */; };
+		0BFC4A3423FDEFF200A150FB /* Truncated Octahedron.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC49FC23FDEAD400A150FB /* Truncated Octahedron.png */; };
+		0BFC4A3523FDEFF200A150FB /* Truncated truncated icosahedron.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC49FE23FDEB7400A150FB /* Truncated truncated icosahedron.png */; };
+		0BFC4A3623FDEFF200A150FB /* Truncated Cuboctahedron.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC4A0023FDEC4600A150FB /* Truncated Cuboctahedron.png */; };
+		0BFC4A3723FDEFF200A150FB /* Rotunda-Drilled Truncated Icosidodecahedron.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC4A0223FDECF400A150FB /* Rotunda-Drilled Truncated Icosidodecahedron.png */; };
+		0BFC4A3823FDEFF200A150FB /* Pentakis Dodecahedron.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC4A0C23FDED8D00A150FB /* Pentakis Dodecahedron.png */; };
+		0BFC4A3A23FDEFF200A150FB /* Rhombic Triacontahedron.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC4A0E23FDEDE500A150FB /* Rhombic Triacontahedron.png */; };
+		0BFC4A3B23FDEFF200A150FB /* Tetrahedron.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC4A0F23FDEE3100A150FB /* Tetrahedron.png */; };
+		0BFC4A3C23FDEFF200A150FB /* Prism-Expanded Truncated Cube.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC4A1023FDEE5E00A150FB /* Prism-Expanded Truncated Cube.png */; };
+		0BFC4A3E23FDEFF200A150FB /* Parabigyrate Rhombicosidodecahedron.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC4A1223FDEE8900A150FB /* Parabigyrate Rhombicosidodecahedron.png */; };
+		0BFC4A4123FDEFF200A150FB /* Gyroelongated Square Bicupola.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC4A1523FDEEA200A150FB /* Gyroelongated Square Bicupola.png */; };
+		0BFC4A4223FDEFF200A150FB /* Parabidiminished Rhombicosidodecahedron.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC4A1623FDEEBE00A150FB /* Parabidiminished Rhombicosidodecahedron.png */; };
+		0BFC4A4423FDEFF200A150FB /* Icosahedron.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC4A1823FDEED600A150FB /* Icosahedron.png */; };
+		0BFC4A4723FDEFF200A150FB /* Gyroelongated Pentagonal Cupola.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC4A1B23FDEEF800A150FB /* Gyroelongated Pentagonal Cupola.png */; };
+		0BFC4A4923FDEFF200A150FB /* Stewart K4'.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC4A1D23FDEF3700A150FB /* Stewart K4'.png */; };
+		0BFC4A4A23FDEFF200A150FB /* Truncated Dodecahedron.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC4A1E23FDEF8200A150FB /* Truncated Dodecahedron.png */; };
+		0BFC4A4B23FDEFF200A150FB /* Half-truncated Truncated Icosahedron.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC4A1F23FDEFC100A150FB /* Half-truncated Truncated Icosahedron.png */; };
+		0BFC4A4C23FDEFF200A150FB /* Truncated Icosahedron.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC4A2023FDEFF200A150FB /* Truncated Icosahedron.png */; };
+		0BFC4A4F23FDF91F00A150FB /* TitleIntegrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC4A4E23FDF91F00A150FB /* TitleIntegrator.swift */; };
+		0BFC4A5123FE183000A150FB /* TitleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC4A5023FE182F00A150FB /* TitleScene.swift */; };
+		0BFC4A5223FE1DF200A150FB /* Instance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B16083D23F4AC9E00659644 /* Instance.swift */; };
+		0BFC4A5423FE2E9A00A150FB /* K.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC4A5323FE2E9A00A150FB /* K.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0B1575FE23FB6C3100E9ECF5 /* MyPolygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPolygon.swift; sourceTree = "<group>"; };
+		0B15760023FCB73E00E9ECF5 /* TrackBall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackBall.swift; sourceTree = "<group>"; };
+		0B16083B23F46C1000659644 /* train-color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "train-color.png"; sourceTree = "<group>"; };
+		0B16083D23F4AC9E00659644 /* Instance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instance.swift; sourceTree = "<group>"; };
+		0B382F3523FDD76200CF60D4 /* Q.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Q.png; sourceTree = "<group>"; };
+		0B382F3623FDD79700CF60D4 /* C.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = C.png; sourceTree = "<group>"; };
+		0B382F3723FDD7C300CF60D4 /* U.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = U.png; sourceTree = "<group>"; };
+		0B382F3A23FDD84F00CF60D4 /* X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = X.png; sourceTree = "<group>"; };
+		0B382F4023FDD9A400CF60D4 /* F.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = F.png; sourceTree = "<group>"; };
+		0B382F4123FDD9D800CF60D4 /* W.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = W.png; sourceTree = "<group>"; };
+		0B382F4323FDDA4F00CF60D4 /* J.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = J.png; sourceTree = "<group>"; };
+		0B382F4623FDDB2200CF60D4 /* O.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = O.png; sourceTree = "<group>"; };
+		0B382F4723FDDB6100CF60D4 /* I.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = I.png; sourceTree = "<group>"; };
+		0B382F4823FDDBA500CF60D4 /* B.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = B.png; sourceTree = "<group>"; };
+		0B382F4923FDDBDA00CF60D4 /* P.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = P.png; sourceTree = "<group>"; };
+		0B382F4A23FDDC1600CF60D4 /* V.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = V.png; sourceTree = "<group>"; };
+		0B382F4B23FDDC4E00CF60D4 /* G.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = G.png; sourceTree = "<group>"; };
+		0B38EAFE23FD756300CF60D4 /* AppController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
+		0B38EB0023FD785C00CF60D4 /* Words.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Words.swift; sourceTree = "<group>"; };
+		0B38EB0223FD902100CF60D4 /* SQLiteDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDatabase.swift; sourceTree = "<group>"; };
+		0B38EB0523FDB2B300CF60D4 /* data.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = data.sqlite; path = ../../../AlphaHedra/data.sqlite; sourceTree = "<group>"; };
+		0B38EB0723FDB2CB00CF60D4 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		0B38EB0823FDB2D000CF60D4 /* JumpToLevel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JumpToLevel.png; sourceTree = "<group>"; };
+		0B38EB0923FDB2D400CF60D4 /* bamboo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bamboo.png; sourceTree = "<group>"; };
+		0B38EB0A23FDB2D900CF60D4 /* metal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = metal.png; sourceTree = "<group>"; };
+		0B38EB0B23FDB2DF00CF60D4 /* StartNewGame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StartNewGame.png; sourceTree = "<group>"; };
+		0B38EB0C23FDB2E400CF60D4 /* lino.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lino.png; sourceTree = "<group>"; };
+		0B38EB0D23FDB2EB00CF60D4 /* ResumeGame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ResumeGame.png; sourceTree = "<group>"; };
+		0B38EB0E23FDB2F100CF60D4 /* Options.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Options.png; sourceTree = "<group>"; };
+		0B38EB0F23FDB2F700CF60D4 /* Guide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Guide.png; sourceTree = "<group>"; };
+		0B38EB1023FDB2FD00CF60D4 /* Alpha5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Alpha5.png; sourceTree = "<group>"; };
+		0B38EB1123FDB30200CF60D4 /* whiteButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteButton.png; sourceTree = "<group>"; };
+		0B38EB1223FDB30900CF60D4 /* blueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueButton.png; sourceTree = "<group>"; };
+		0B38EB1323FDB30E00CF60D4 /* Alpha4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Alpha4.png; sourceTree = "<group>"; };
+		0B38EB1423FDB30E00CF60D4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../../../AlphaHedra/Info.plist; sourceTree = "<group>"; };
+		0B38EB1523FDB31500CF60D4 /* wordlist.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = wordlist.sqlite; sourceTree = "<group>"; };
+		0B38EB1623FDB31B00CF60D4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		0B38EB1723FDB32200CF60D4 /* HighScores.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HighScores.png; sourceTree = "<group>"; };
+		0B6F7BDA23F43F5A00DEFA61 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		0B6F7BDC23F4418100DEFA61 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		0B6F7BDE23F4418F00DEFA61 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		0B6F7BE023F441C800DEFA61 /* Renderable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderable.swift; sourceTree = "<group>"; };
+		0B6F7BE323F4561F00DEFA61 /* Mesh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mesh.swift; sourceTree = "<group>"; };
+		0B8D753E23FE436F00B57559 /* Title1.obj */ = {isa = PBXFileReference; lastKnownFileType = text; path = Title1.obj; sourceTree = "<group>"; };
+		0B8D754023FE452200B57559 /* TitleQuad.mtl */ = {isa = PBXFileReference; lastKnownFileType = text; path = TitleQuad.mtl; sourceTree = "<group>"; };
+		0B8D754223FE4A3700B57559 /* Quad2.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Quad2.mtl; sourceTree = "<group>"; };
+		0B8D754323FE4A3700B57559 /* Quad2.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Quad2.obj; sourceTree = "<group>"; };
+		0B8D754623FEF8C900B57559 /* Title2.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Title2.obj; sourceTree = "<group>"; };
+		0B8D754823FEF90B00B57559 /* Title3.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Title3.obj; sourceTree = "<group>"; };
+		0B8D754A23FEF94B00B57559 /* Title5.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Title5.obj; sourceTree = "<group>"; };
+		0B8D754C23FEF98500B57559 /* Title4.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Title4.obj; sourceTree = "<group>"; };
+		0BB1978C23F8DC6600676034 /* wood_original.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wood_original.jpg; sourceTree = "<group>"; };
+		0BB1979B23F9EB3A00676034 /* TestPolyhedron.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = TestPolyhedron.mtl; path = ../../../TestPolyhedron.mtl; sourceTree = "<group>"; };
+		0BB1979C23F9EB3A00676034 /* TestPolyhedron.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = TestPolyhedron.obj; path = ../TestPolyhedron.obj; sourceTree = SOURCE_ROOT; };
+		0BBFE0C023F78F0000850FB9 /* Polyhedron.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Polyhedron.swift; sourceTree = "<group>"; };
+		0BBFE0C223F79E6600850FB9 /* BasePolygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePolygon.swift; sourceTree = "<group>"; };
+		0BD2B9D423FCF922009E869E /* ButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		0BEC0E4523F3040A00B76223 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		0BEC0E4723F31B6500B76223 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		0BEC0E4923F31ED800B76223 /* train.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = train.obj; sourceTree = "<group>"; };
+		0BEC0E4A23F31ED800B76223 /* train.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = train.mtl; sourceTree = "<group>"; };
+		0BEC0E4E23F32A2400B76223 /* MathLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathLibrary.swift; sourceTree = "<group>"; };
+		0BEC0E5023F32A3900B76223 /* treefir.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = treefir.obj; sourceTree = "<group>"; };
+		0BEC0E5123F32A3900B76223 /* treefir.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = treefir.mtl; sourceTree = "<group>"; };
+		0BEC0E5423F32BA300B76223 /* Transform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transform.swift; sourceTree = "<group>"; };
+		0BEC0E5623F337C000B76223 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		0BEC0E5823F3397B00B76223 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		0BF3333C23F1CF9A00FA5247 /* PolyWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PolyWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BF3333F23F1CF9A00FA5247 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0BF3334123F1CF9A00FA5247 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0BF3334323F1CF9E00FA5247 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0BF3334623F1CF9E00FA5247 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0BF3334823F1CF9E00FA5247 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BF3334923F1CF9E00FA5247 /* MetalRenderer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MetalRenderer.entitlements; sourceTree = "<group>"; };
+		0BF3334F23F1D08B00FA5247 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		0BF3335123F1D94800FA5247 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		0BFC49C423FDE20500A150FB /* A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = A.png; sourceTree = "<group>"; };
+		0BFC49C623FDE24C00A150FB /* E.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = E.png; sourceTree = "<group>"; };
+		0BFC49C723FDE28B00A150FB /* H.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = H.png; sourceTree = "<group>"; };
+		0BFC49C923FDE2C300A150FB /* D.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = D.png; sourceTree = "<group>"; };
+		0BFC49CC23FDE30600A150FB /* M.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = M.png; sourceTree = "<group>"; };
+		0BFC49CD23FDE33600A150FB /* L.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = L.png; sourceTree = "<group>"; };
+		0BFC49D123FDE3D700A150FB /* N.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = N.png; sourceTree = "<group>"; };
+		0BFC49D323FDE40A00A150FB /* R.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = R.png; sourceTree = "<group>"; };
+		0BFC49D823FDE44D00A150FB /* Z.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Z.png; sourceTree = "<group>"; };
+		0BFC49D923FDE47500A150FB /* S.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = S.png; sourceTree = "<group>"; };
+		0BFC49DA23FDE4A000A150FB /* Y.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Y.png; sourceTree = "<group>"; };
+		0BFC49DD23FDE4FA00A150FB /* T.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = T.png; sourceTree = "<group>"; };
+		0BFC49E423FDE56800A150FB /* Great Dodecacronic Hexecontahedron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Great Dodecacronic Hexecontahedron.png"; sourceTree = "<group>"; };
+		0BFC49E523FDE5AA00A150FB /* Nameless Blob.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nameless Blob.png"; sourceTree = "<group>"; };
+		0BFC49E623FDE5D900A150FB /* Small Dodecahemicosahedron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Small Dodecahemicosahedron.png"; sourceTree = "<group>"; };
+		0BFC49E723FDE60600A150FB /* Truncated Octahedron 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Truncated Octahedron 8.png"; sourceTree = "<group>"; };
+		0BFC49E823FDE63100A150FB /* Gyro-Expanded Cuboctahedron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gyro-Expanded Cuboctahedron.png"; sourceTree = "<group>"; };
+		0BFC49E923FDE66000A150FB /* Octagon-Drilled Truncated Cuboctahedron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Octagon-Drilled Truncated Cuboctahedron.png"; sourceTree = "<group>"; };
+		0BFC49EA23FDE68A00A150FB /* Strombic Hexecontahedron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Strombic Hexecontahedron.png"; sourceTree = "<group>"; };
+		0BFC49EB23FDE6B100A150FB /* Truncated Icosidodecahedron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Truncated Icosidodecahedron.png"; sourceTree = "<group>"; };
+		0BFC49EC23FDE6DC00A150FB /* Rhombicosidodecahedron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rhombicosidodecahedron.png; sourceTree = "<group>"; };
+		0BFC49ED23FDE71000A150FB /* Gyro-Double-Expanded Cuboctahedron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gyro-Double-Expanded Cuboctahedron.png"; sourceTree = "<group>"; };
+		0BFC49EE23FDE73A00A150FB /* Octahedron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Octahedron.png; sourceTree = "<group>"; };
+		0BFC49EF23FDE76E00A150FB /* Gyroelongated Pentagonal Rotunda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gyroelongated Pentagonal Rotunda.png"; sourceTree = "<group>"; };
+		0BFC49F023FDE7DD00A150FB /* Antiprism-Extended Dodecahedrahedron Ring.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Antiprism-Extended Dodecahedrahedron Ring.png"; sourceTree = "<group>"; };
+		0BFC49F123FDE89300A150FB /* Heptagonal Petals.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Heptagonal Petals.png"; sourceTree = "<group>"; };
+		0BFC49F223FDE8EA00A150FB /* Cube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Cube.png; path = MetalRenderer/Polyhedron/Cube.png; sourceTree = SOURCE_ROOT; };
+		0BFC49F423FDE93200A150FB /* Pentagonal Orthobirotunda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pentagonal Orthobirotunda.png"; sourceTree = "<group>"; };
+		0BFC49F523FDE96F00A150FB /* Drilled Truncated Dodecahedron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Drilled Truncated Dodecahedron.png"; sourceTree = "<group>"; };
+		0BFC49F623FDE99900A150FB /* Icosahedra 8-ring.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icosahedra 8-ring.png"; sourceTree = "<group>"; };
+		0BFC49F723FDE9C500A150FB /* Dodecahedron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dodecahedron.png; sourceTree = "<group>"; };
+		0BFC49F823FDE9F800A150FB /* Tetrakishexahedron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tetrakishexahedron.png; sourceTree = "<group>"; };
+		0BFC49F923FDEA2800A150FB /* Disdyakisdodecahedron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Disdyakisdodecahedron.png; sourceTree = "<group>"; };
+		0BFC49FA23FDEA6100A150FB /* Torus Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Torus Slice.png"; sourceTree = "<group>"; };
+		0BFC49FB23FDEA8F00A150FB /* Cupola-Drilled Truncated Icosidodecahedron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cupola-Drilled Truncated Icosidodecahedron.png"; sourceTree = "<group>"; };
+		0BFC49FC23FDEAD400A150FB /* Truncated Octahedron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Truncated Octahedron.png"; sourceTree = "<group>"; };
+		0BFC49FD23FDEB2500A150FB /* Drilled Truncated Cube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Drilled Truncated Cube.png"; sourceTree = "<group>"; };
+		0BFC49FE23FDEB7400A150FB /* Truncated truncated icosahedron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Truncated truncated icosahedron.png"; sourceTree = "<group>"; };
+		0BFC49FF23FDEBD900A150FB /* Eight-Octahedron Ring.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Eight-Octahedron Ring.png"; sourceTree = "<group>"; };
+		0BFC4A0023FDEC4600A150FB /* Truncated Cuboctahedron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Truncated Cuboctahedron.png"; sourceTree = "<group>"; };
+		0BFC4A0123FDECA300A150FB /* Deca-faced Polyhedron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Deca-faced Polyhedron.png"; sourceTree = "<group>"; };
+		0BFC4A0223FDECF400A150FB /* Rotunda-Drilled Truncated Icosidodecahedron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rotunda-Drilled Truncated Icosidodecahedron.png"; sourceTree = "<group>"; };
+		0BFC4A0323FDED4700A150FB /* Cuboctahedron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cuboctahedron.png; sourceTree = "<group>"; };
+		0BFC4A0C23FDED8D00A150FB /* Pentakis Dodecahedron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pentakis Dodecahedron.png"; sourceTree = "<group>"; };
+		0BFC4A0E23FDEDE500A150FB /* Rhombic Triacontahedron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rhombic Triacontahedron.png"; sourceTree = "<group>"; };
+		0BFC4A0F23FDEE3100A150FB /* Tetrahedron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tetrahedron.png; sourceTree = "<group>"; };
+		0BFC4A1023FDEE5E00A150FB /* Prism-Expanded Truncated Cube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Prism-Expanded Truncated Cube.png"; sourceTree = "<group>"; };
+		0BFC4A1223FDEE8900A150FB /* Parabigyrate Rhombicosidodecahedron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Parabigyrate Rhombicosidodecahedron.png"; sourceTree = "<group>"; };
+		0BFC4A1523FDEEA200A150FB /* Gyroelongated Square Bicupola.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gyroelongated Square Bicupola.png"; sourceTree = "<group>"; };
+		0BFC4A1623FDEEBE00A150FB /* Parabidiminished Rhombicosidodecahedron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Parabidiminished Rhombicosidodecahedron.png"; sourceTree = "<group>"; };
+		0BFC4A1823FDEED600A150FB /* Icosahedron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icosahedron.png; sourceTree = "<group>"; };
+		0BFC4A1B23FDEEF800A150FB /* Gyroelongated Pentagonal Cupola.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gyroelongated Pentagonal Cupola.png"; sourceTree = "<group>"; };
+		0BFC4A1D23FDEF3700A150FB /* Stewart K4'.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Stewart K4'.png"; sourceTree = "<group>"; };
+		0BFC4A1E23FDEF8200A150FB /* Truncated Dodecahedron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Truncated Dodecahedron.png"; sourceTree = "<group>"; };
+		0BFC4A1F23FDEFC100A150FB /* Half-truncated Truncated Icosahedron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Half-truncated Truncated Icosahedron.png"; sourceTree = "<group>"; };
+		0BFC4A2023FDEFF200A150FB /* Truncated Icosahedron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Truncated Icosahedron.png"; sourceTree = "<group>"; };
+		0BFC4A4E23FDF91F00A150FB /* TitleIntegrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleIntegrator.swift; sourceTree = "<group>"; };
+		0BFC4A5023FE182F00A150FB /* TitleScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleScene.swift; sourceTree = "<group>"; };
+		0BFC4A5323FE2E9A00A150FB /* K.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = K.png; path = ../../../AlphaHedra/Letters/K.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0BF3333923F1CF9A00FA5247 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B382F6A23FDE07600CF60D4 /* Letters */ = {
+			isa = PBXGroup;
+			children = (
+				0BFC49C423FDE20500A150FB /* A.png */,
+				0B382F4823FDDBA500CF60D4 /* B.png */,
+				0B382F3623FDD79700CF60D4 /* C.png */,
+				0BFC49C923FDE2C300A150FB /* D.png */,
+				0BFC49C623FDE24C00A150FB /* E.png */,
+				0B382F4023FDD9A400CF60D4 /* F.png */,
+				0B382F4B23FDDC4E00CF60D4 /* G.png */,
+				0BFC49C723FDE28B00A150FB /* H.png */,
+				0B382F4723FDDB6100CF60D4 /* I.png */,
+				0B382F4323FDDA4F00CF60D4 /* J.png */,
+				0BFC4A5323FE2E9A00A150FB /* K.png */,
+				0BFC49CD23FDE33600A150FB /* L.png */,
+				0BFC49CC23FDE30600A150FB /* M.png */,
+				0BFC49D123FDE3D700A150FB /* N.png */,
+				0B382F4623FDDB2200CF60D4 /* O.png */,
+				0B382F4923FDDBDA00CF60D4 /* P.png */,
+				0B382F3523FDD76200CF60D4 /* Q.png */,
+				0BFC49D323FDE40A00A150FB /* R.png */,
+				0BFC49D923FDE47500A150FB /* S.png */,
+				0BFC49DD23FDE4FA00A150FB /* T.png */,
+				0B382F3723FDD7C300CF60D4 /* U.png */,
+				0B382F4A23FDDC1600CF60D4 /* V.png */,
+				0B382F4123FDD9D800CF60D4 /* W.png */,
+				0B382F3A23FDD84F00CF60D4 /* X.png */,
+				0BFC49DA23FDE4A000A150FB /* Y.png */,
+				0BFC49D823FDE44D00A150FB /* Z.png */,
+			);
+			name = Letters;
+			sourceTree = "<group>";
+		};
+		0B38EB0423FDB24F00CF60D4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0BFC49E323FDE50B00A150FB /* Polyhedron */,
+				0B382F6A23FDE07600CF60D4 /* Letters */,
+				0B38EB1523FDB31500CF60D4 /* wordlist.sqlite */,
+				0B38EB0F23FDB2F700CF60D4 /* Guide.png */,
+				0B38EB1123FDB30200CF60D4 /* whiteButton.png */,
+				0B38EB1223FDB30900CF60D4 /* blueButton.png */,
+				0B38EB0B23FDB2DF00CF60D4 /* StartNewGame.png */,
+				0B38EB0D23FDB2EB00CF60D4 /* ResumeGame.png */,
+				0B38EB0823FDB2D000CF60D4 /* JumpToLevel.png */,
+				0B38EB1723FDB32200CF60D4 /* HighScores.png */,
+				0B38EB0E23FDB2F100CF60D4 /* Options.png */,
+				0B38EB1023FDB2FD00CF60D4 /* Alpha5.png */,
+				0B38EB1323FDB30E00CF60D4 /* Alpha4.png */,
+				0B38EB0923FDB2D400CF60D4 /* bamboo.png */,
+				0B38EB0C23FDB2E400CF60D4 /* lino.png */,
+				0B38EB0A23FDB2D900CF60D4 /* metal.png */,
+				0B38EB0723FDB2CB00CF60D4 /* Icon.png */,
+				0B38EB1423FDB30E00CF60D4 /* Info.plist */,
+				0B38EB1623FDB31B00CF60D4 /* Default.png */,
+				0B38EB0523FDB2B300CF60D4 /* data.sqlite */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		0B6F7BE223F4485E00DEFA61 /* Rendering */ = {
+			isa = PBXGroup;
+			children = (
+				0BF3335123F1D94800FA5247 /* Shaders.metal */,
+				0BEC0E4723F31B6500B76223 /* Model.swift */,
+				0BEC0E4523F3040A00B76223 /* Extensions.swift */,
+				0B6F7BE023F441C800DEFA61 /* Renderable.swift */,
+				0BEC0E5823F3397B00B76223 /* Common.h */,
+				0BEC0E4E23F32A2400B76223 /* MathLibrary.swift */,
+				0BF3334F23F1D08B00FA5247 /* Renderer.swift */,
+				0B6F7BE323F4561F00DEFA61 /* Mesh.swift */,
+				0B16083D23F4AC9E00659644 /* Instance.swift */,
+				0BBFE0C023F78F0000850FB9 /* Polyhedron.swift */,
+				0BBFE0C223F79E6600850FB9 /* BasePolygon.swift */,
+				0B1575FE23FB6C3100E9ECF5 /* MyPolygon.swift */,
+			);
+			path = Rendering;
+			sourceTree = "<group>";
+		};
+		0BEC0E4D23F31EF800B76223 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0BB1979B23F9EB3A00676034 /* TestPolyhedron.mtl */,
+				0B8D754023FE452200B57559 /* TitleQuad.mtl */,
+				0BB1979C23F9EB3A00676034 /* TestPolyhedron.obj */,
+				0B8D753E23FE436F00B57559 /* Title1.obj */,
+				0B8D754C23FEF98500B57559 /* Title4.obj */,
+				0B8D754A23FEF94B00B57559 /* Title5.obj */,
+				0B8D754823FEF90B00B57559 /* Title3.obj */,
+				0B8D754623FEF8C900B57559 /* Title2.obj */,
+				0B8D754223FE4A3700B57559 /* Quad2.mtl */,
+				0B8D754323FE4A3700B57559 /* Quad2.obj */,
+				0BB1978C23F8DC6600676034 /* wood_original.jpg */,
+				0B16083B23F46C1000659644 /* train-color.png */,
+				0BEC0E5123F32A3900B76223 /* treefir.mtl */,
+				0BEC0E5023F32A3900B76223 /* treefir.obj */,
+				0BEC0E4A23F31ED800B76223 /* train.mtl */,
+				0BEC0E4923F31ED800B76223 /* train.obj */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0BF3333323F1CF9A00FA5247 = {
+			isa = PBXGroup;
+			children = (
+				0BF3333E23F1CF9A00FA5247 /* MetalRenderer */,
+				0BF3333D23F1CF9A00FA5247 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0BF3333D23F1CF9A00FA5247 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0BF3333C23F1CF9A00FA5247 /* PolyWords.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0BF3333E23F1CF9A00FA5247 /* MetalRenderer */ = {
+			isa = PBXGroup;
+			children = (
+				0BEC0E4D23F31EF800B76223 /* Models */,
+				0B6F7BE223F4485E00DEFA61 /* Rendering */,
+				0BF3333F23F1CF9A00FA5247 /* AppDelegate.swift */,
+				0BF3334123F1CF9A00FA5247 /* ViewController.swift */,
+				0BD2B9D423FCF922009E869E /* ButtonView.swift */,
+				0B6F7BDC23F4418100DEFA61 /* Scene.swift */,
+				0BEC0E5423F32BA300B76223 /* Transform.swift */,
+				0B15760023FCB73E00E9ECF5 /* TrackBall.swift */,
+				0B6F7BDE23F4418F00DEFA61 /* GameScene.swift */,
+				0BFC4A5023FE182F00A150FB /* TitleScene.swift */,
+				0B38EB0423FDB24F00CF60D4 /* Resources */,
+				0B6F7BDA23F43F5A00DEFA61 /* Node.swift */,
+				0BEC0E5623F337C000B76223 /* Camera.swift */,
+				0BF3334323F1CF9E00FA5247 /* Assets.xcassets */,
+				0BF3334523F1CF9E00FA5247 /* Main.storyboard */,
+				0BF3334823F1CF9E00FA5247 /* Info.plist */,
+				0BF3334923F1CF9E00FA5247 /* MetalRenderer.entitlements */,
+				0B38EAFE23FD756300CF60D4 /* AppController.swift */,
+				0B38EB0023FD785C00CF60D4 /* Words.swift */,
+				0B38EB0223FD902100CF60D4 /* SQLiteDatabase.swift */,
+				0BFC4A4E23FDF91F00A150FB /* TitleIntegrator.swift */,
+			);
+			path = MetalRenderer;
+			sourceTree = "<group>";
+		};
+		0BFC49E323FDE50B00A150FB /* Polyhedron */ = {
+			isa = PBXGroup;
+			children = (
+				0BFC49F023FDE7DD00A150FB /* Antiprism-Extended Dodecahedrahedron Ring.png */,
+				0BFC49F223FDE8EA00A150FB /* Cube.png */,
+				0BFC4A0323FDED4700A150FB /* Cuboctahedron.png */,
+				0BFC49FB23FDEA8F00A150FB /* Cupola-Drilled Truncated Icosidodecahedron.png */,
+				0BFC4A0123FDECA300A150FB /* Deca-faced Polyhedron.png */,
+				0BFC49F923FDEA2800A150FB /* Disdyakisdodecahedron.png */,
+				0BFC49F723FDE9C500A150FB /* Dodecahedron.png */,
+				0BFC49FD23FDEB2500A150FB /* Drilled Truncated Cube.png */,
+				0BFC49F523FDE96F00A150FB /* Drilled Truncated Dodecahedron.png */,
+				0BFC49FF23FDEBD900A150FB /* Eight-Octahedron Ring.png */,
+				0BFC49E423FDE56800A150FB /* Great Dodecacronic Hexecontahedron.png */,
+				0BFC49ED23FDE71000A150FB /* Gyro-Double-Expanded Cuboctahedron.png */,
+				0BFC49E823FDE63100A150FB /* Gyro-Expanded Cuboctahedron.png */,
+				0BFC4A1B23FDEEF800A150FB /* Gyroelongated Pentagonal Cupola.png */,
+				0BFC49EF23FDE76E00A150FB /* Gyroelongated Pentagonal Rotunda.png */,
+				0BFC4A1523FDEEA200A150FB /* Gyroelongated Square Bicupola.png */,
+				0BFC4A1F23FDEFC100A150FB /* Half-truncated Truncated Icosahedron.png */,
+				0BFC49F123FDE89300A150FB /* Heptagonal Petals.png */,
+				0BFC49F623FDE99900A150FB /* Icosahedra 8-ring.png */,
+				0BFC4A1823FDEED600A150FB /* Icosahedron.png */,
+				0BFC49E523FDE5AA00A150FB /* Nameless Blob.png */,
+				0BFC49E923FDE66000A150FB /* Octagon-Drilled Truncated Cuboctahedron.png */,
+				0BFC49EE23FDE73A00A150FB /* Octahedron.png */,
+				0BFC4A1623FDEEBE00A150FB /* Parabidiminished Rhombicosidodecahedron.png */,
+				0BFC4A1223FDEE8900A150FB /* Parabigyrate Rhombicosidodecahedron.png */,
+				0BFC49F423FDE93200A150FB /* Pentagonal Orthobirotunda.png */,
+				0BFC4A0C23FDED8D00A150FB /* Pentakis Dodecahedron.png */,
+				0BFC4A1023FDEE5E00A150FB /* Prism-Expanded Truncated Cube.png */,
+				0BFC4A0E23FDEDE500A150FB /* Rhombic Triacontahedron.png */,
+				0BFC49EC23FDE6DC00A150FB /* Rhombicosidodecahedron.png */,
+				0BFC4A0223FDECF400A150FB /* Rotunda-Drilled Truncated Icosidodecahedron.png */,
+				0BFC49E623FDE5D900A150FB /* Small Dodecahemicosahedron.png */,
+				0BFC4A1D23FDEF3700A150FB /* Stewart K4'.png */,
+				0BFC49EA23FDE68A00A150FB /* Strombic Hexecontahedron.png */,
+				0BFC4A0F23FDEE3100A150FB /* Tetrahedron.png */,
+				0BFC49F823FDE9F800A150FB /* Tetrakishexahedron.png */,
+				0BFC49FA23FDEA6100A150FB /* Torus Slice.png */,
+				0BFC4A0023FDEC4600A150FB /* Truncated Cuboctahedron.png */,
+				0BFC4A1E23FDEF8200A150FB /* Truncated Dodecahedron.png */,
+				0BFC4A2023FDEFF200A150FB /* Truncated Icosahedron.png */,
+				0BFC49EB23FDE6B100A150FB /* Truncated Icosidodecahedron.png */,
+				0BFC49E723FDE60600A150FB /* Truncated Octahedron 8.png */,
+				0BFC49FC23FDEAD400A150FB /* Truncated Octahedron.png */,
+				0BFC49FE23FDEB7400A150FB /* Truncated truncated icosahedron.png */,
+			);
+			path = Polyhedron;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0BF3333B23F1CF9A00FA5247 /* PolyWords */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BF3334C23F1CF9E00FA5247 /* Build configuration list for PBXNativeTarget "PolyWords" */;
+			buildPhases = (
+				0BF3333823F1CF9A00FA5247 /* Sources */,
+				0BF3333923F1CF9A00FA5247 /* Frameworks */,
+				0BF3333A23F1CF9A00FA5247 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PolyWords;
+			productName = MetalRenderer;
+			productReference = 0BF3333C23F1CF9A00FA5247 /* PolyWords.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0BF3333423F1CF9A00FA5247 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Eric Mockensturm";
+				TargetAttributes = {
+					0BF3333B23F1CF9A00FA5247 = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
+					};
+				};
+			};
+			buildConfigurationList = 0BF3333723F1CF9A00FA5247 /* Build configuration list for PBXProject "PolyWords" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				de,
+			);
+			mainGroup = 0BF3333323F1CF9A00FA5247;
+			productRefGroup = 0BF3333D23F1CF9A00FA5247 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0BF3333B23F1CF9A00FA5247 /* PolyWords */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0BF3333A23F1CF9A00FA5247 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BFC4A0723FDED4700A150FB /* Cupola-Drilled Truncated Icosidodecahedron.png in Resources */,
+				0B38EB1823FDB32200CF60D4 /* Icon.png in Resources */,
+				0BFC4A3523FDEFF200A150FB /* Truncated truncated icosahedron.png in Resources */,
+				0BFC49CB23FDE2C500A150FB /* D.png in Resources */,
+				0BFC4A0523FDED4700A150FB /* Dodecahedron.png in Resources */,
+				0B38EB2223FDB32200CF60D4 /* whiteButton.png in Resources */,
+				0B38EB2723FDB32200CF60D4 /* Default.png in Resources */,
+				0B382F6023FDDCEE00CF60D4 /* O.png in Resources */,
+				0BFC4A3623FDEFF200A150FB /* Truncated Cuboctahedron.png in Resources */,
+				0BFC4A2D23FDEFF200A150FB /* Gyroelongated Pentagonal Rotunda.png in Resources */,
+				0BFC4A4123FDEFF200A150FB /* Gyroelongated Square Bicupola.png in Resources */,
+				0BFC49CA23FDE2C500A150FB /* E.png in Resources */,
+				0B382F5423FDDCEE00CF60D4 /* X.png in Resources */,
+				0B38EB2023FDB32200CF60D4 /* Guide.png in Resources */,
+				0BFC4A3023FDEFF200A150FB /* Pentagonal Orthobirotunda.png in Resources */,
+				0BFC4A2523FDEFF200A150FB /* Truncated Octahedron 8.png in Resources */,
+				0B8D754B23FEF94B00B57559 /* Title5.obj in Resources */,
+				0B38EB1F23FDB32200CF60D4 /* Options.png in Resources */,
+				0BEC0E5223F32A3900B76223 /* treefir.obj in Resources */,
+				0BFC4A2923FDEFF200A150FB /* Truncated Icosidodecahedron.png in Resources */,
+				0B38EB1B23FDB32200CF60D4 /* metal.png in Resources */,
+				0B382F5B23FDDCEE00CF60D4 /* W.png in Resources */,
+				0B382F5A23FDDCEE00CF60D4 /* F.png in Resources */,
+				0BFC4A3C23FDEFF200A150FB /* Prism-Expanded Truncated Cube.png in Resources */,
+				0BFC4A0923FDED4700A150FB /* Eight-Octahedron Ring.png in Resources */,
+				0BFC4A2C23FDEFF200A150FB /* Octahedron.png in Resources */,
+				0BFC4A3323FDEFF200A150FB /* Torus Slice.png in Resources */,
+				0BFC4A2423FDEFF200A150FB /* Small Dodecahemicosahedron.png in Resources */,
+				0B16083C23F46C1000659644 /* train-color.png in Resources */,
+				0BFC4A0B23FDED4700A150FB /* Cuboctahedron.png in Resources */,
+				0BFC4A2A23FDEFF200A150FB /* Rhombicosidodecahedron.png in Resources */,
+				0BFC4A4A23FDEFF200A150FB /* Truncated Dodecahedron.png in Resources */,
+				0BFC4A5423FE2E9A00A150FB /* K.png in Resources */,
+				0BFC4A4C23FDEFF200A150FB /* Truncated Icosahedron.png in Resources */,
+				0B38EB2523FDB32200CF60D4 /* Info.plist in Resources */,
+				0BF3334423F1CF9E00FA5247 /* Assets.xcassets in Resources */,
+				0B8D754723FEF8C900B57559 /* Title2.obj in Resources */,
+				0B38EB1A23FDB32200CF60D4 /* bamboo.png in Resources */,
+				0B38EB1E23FDB32200CF60D4 /* ResumeGame.png in Resources */,
+				0BFC4A4923FDEFF200A150FB /* Stewart K4'.png in Resources */,
+				0BFC4A3723FDEFF200A150FB /* Rotunda-Drilled Truncated Icosidodecahedron.png in Resources */,
+				0BFC4A2823FDEFF200A150FB /* Strombic Hexecontahedron.png in Resources */,
+				0B8D753F23FE436F00B57559 /* Title1.obj in Resources */,
+				0BFC49C823FDE28C00A150FB /* H.png in Resources */,
+				0B38EB0623FDB2B300CF60D4 /* data.sqlite in Resources */,
+				0BFC4A0823FDED4700A150FB /* Drilled Truncated Cube.png in Resources */,
+				0BF3334723F1CF9E00FA5247 /* Main.storyboard in Resources */,
+				0BFC49D623FDE40C00A150FB /* L.png in Resources */,
+				0BFC4A2F23FDEFF200A150FB /* Heptagonal Petals.png in Resources */,
+				0B382F6523FDDCEE00CF60D4 /* G.png in Resources */,
+				0BFC49DC23FDE4A200A150FB /* Y.png in Resources */,
+				0B38EB1923FDB32200CF60D4 /* JumpToLevel.png in Resources */,
+				0BFC4A4223FDEFF200A150FB /* Parabidiminished Rhombicosidodecahedron.png in Resources */,
+				0BB1979D23F9EB3A00676034 /* TestPolyhedron.mtl in Resources */,
+				0BFC4A0623FDED4700A150FB /* Disdyakisdodecahedron.png in Resources */,
+				0BEC0E5323F32A3900B76223 /* treefir.mtl in Resources */,
+				0B382F4F23FDDCED00CF60D4 /* Q.png in Resources */,
+				0BEC0E4C23F31ED800B76223 /* train.mtl in Resources */,
+				0BFC4A2323FDEFF200A150FB /* Nameless Blob.png in Resources */,
+				0B38EB1C23FDB32200CF60D4 /* StartNewGame.png in Resources */,
+				0BB1978F23F8DC6700676034 /* wood_original.jpg in Resources */,
+				0BFC4A2623FDEFF200A150FB /* Gyro-Expanded Cuboctahedron.png in Resources */,
+				0BFC4A2723FDEFF200A150FB /* Octagon-Drilled Truncated Cuboctahedron.png in Resources */,
+				0BFC4A3223FDEFF200A150FB /* Tetrakishexahedron.png in Resources */,
+				0B382F5023FDDCEE00CF60D4 /* C.png in Resources */,
+				0B8D754523FE4A3700B57559 /* Quad2.obj in Resources */,
+				0B38EB2823FDB32200CF60D4 /* HighScores.png in Resources */,
+				0B8D754423FE4A3700B57559 /* Quad2.mtl in Resources */,
+				0BFC49D223FDE3D800A150FB /* N.png in Resources */,
+				0B38EB2123FDB32200CF60D4 /* Alpha5.png in Resources */,
+				0BFC4A3B23FDEFF200A150FB /* Tetrahedron.png in Resources */,
+				0BEC0E4B23F31ED800B76223 /* train.obj in Resources */,
+				0B38EB2323FDB32200CF60D4 /* blueButton.png in Resources */,
+				0B382F5123FDDCEE00CF60D4 /* U.png in Resources */,
+				0BFC49DF23FDE4FE00A150FB /* R.png in Resources */,
+				0B8D754D23FEF98500B57559 /* Title4.obj in Resources */,
+				0BFC4A0423FDED4700A150FB /* Drilled Truncated Dodecahedron.png in Resources */,
+				0BFC49C523FDE20600A150FB /* A.png in Resources */,
+				0B382F6223FDDCEE00CF60D4 /* B.png in Resources */,
+				0BFC4A3E23FDEFF200A150FB /* Parabigyrate Rhombicosidodecahedron.png in Resources */,
+				0B38EB2423FDB32200CF60D4 /* Alpha4.png in Resources */,
+				0BFC4A4B23FDEFF200A150FB /* Half-truncated Truncated Icosahedron.png in Resources */,
+				0BFC4A3A23FDEFF200A150FB /* Rhombic Triacontahedron.png in Resources */,
+				0B382F6323FDDCEE00CF60D4 /* P.png in Resources */,
+				0BB1979E23F9EB3A00676034 /* TestPolyhedron.obj in Resources */,
+				0B38EB2623FDB32200CF60D4 /* wordlist.sqlite in Resources */,
+				0BFC4A2223FDEFF200A150FB /* Great Dodecacronic Hexecontahedron.png in Resources */,
+				0B8D754123FE452200B57559 /* TitleQuad.mtl in Resources */,
+				0BFC4A3823FDEFF200A150FB /* Pentakis Dodecahedron.png in Resources */,
+				0BFC49DB23FDE4A200A150FB /* Z.png in Resources */,
+				0B8D754923FEF90B00B57559 /* Title3.obj in Resources */,
+				0BFC4A3123FDEFF200A150FB /* Icosahedra 8-ring.png in Resources */,
+				0BFC4A3423FDEFF200A150FB /* Truncated Octahedron.png in Resources */,
+				0B382F5D23FDDCEE00CF60D4 /* J.png in Resources */,
+				0B38EB1D23FDB32200CF60D4 /* lino.png in Resources */,
+				0BFC49E023FDE4FE00A150FB /* S.png in Resources */,
+				0BFC4A2E23FDEFF200A150FB /* Antiprism-Extended Dodecahedrahedron Ring.png in Resources */,
+				0BFC4A2B23FDEFF200A150FB /* Gyro-Double-Expanded Cuboctahedron.png in Resources */,
+				0BFC4A4723FDEFF200A150FB /* Gyroelongated Pentagonal Cupola.png in Resources */,
+				0BFC4A4423FDEFF200A150FB /* Icosahedron.png in Resources */,
+				0BFC49D523FDE40C00A150FB /* M.png in Resources */,
+				0BFC4A0A23FDED4700A150FB /* Deca-faced Polyhedron.png in Resources */,
+				0BFC49F323FDE8EB00A150FB /* Cube.png in Resources */,
+				0B382F6423FDDCEE00CF60D4 /* V.png in Resources */,
+				0B382F6123FDDCEE00CF60D4 /* I.png in Resources */,
+				0BFC49E123FDE4FE00A150FB /* T.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0BF3333823F1CF9A00FA5247 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B38EB0123FD785C00CF60D4 /* Words.swift in Sources */,
+				0BEC0E4623F3040A00B76223 /* Extensions.swift in Sources */,
+				0B6F7BDB23F43F5A00DEFA61 /* Node.swift in Sources */,
+				0BEC0E4F23F32A2400B76223 /* MathLibrary.swift in Sources */,
+				0BF3335223F1D94800FA5247 /* Shaders.metal in Sources */,
+				0BFC4A5223FE1DF200A150FB /* Instance.swift in Sources */,
+				0BF3334223F1CF9A00FA5247 /* ViewController.swift in Sources */,
+				0BFC4A4F23FDF91F00A150FB /* TitleIntegrator.swift in Sources */,
+				0BEC0E4823F31B6500B76223 /* Model.swift in Sources */,
+				0B6F7BDF23F4418F00DEFA61 /* GameScene.swift in Sources */,
+				0B38EB0323FD902100CF60D4 /* SQLiteDatabase.swift in Sources */,
+				0BF3335023F1D08B00FA5247 /* Renderer.swift in Sources */,
+				0BFC4A5123FE183000A150FB /* TitleScene.swift in Sources */,
+				0B6F7BE423F4561F00DEFA61 /* Mesh.swift in Sources */,
+				0B6F7BE123F441C800DEFA61 /* Renderable.swift in Sources */,
+				0BEC0E5523F32BA300B76223 /* Transform.swift in Sources */,
+				0B38EAFF23FD756300CF60D4 /* AppController.swift in Sources */,
+				0BF3334023F1CF9A00FA5247 /* AppDelegate.swift in Sources */,
+				0B15760123FCB73F00E9ECF5 /* TrackBall.swift in Sources */,
+				0BBFE0C323F79E6600850FB9 /* BasePolygon.swift in Sources */,
+				0B1575FF23FB6C3100E9ECF5 /* MyPolygon.swift in Sources */,
+				0BEC0E5723F337C000B76223 /* Camera.swift in Sources */,
+				0B6F7BDD23F4418100DEFA61 /* Scene.swift in Sources */,
+				0BBFE0C123F78F0000850FB9 /* Polyhedron.swift in Sources */,
+				0BD2B9D523FCF922009E869E /* ButtonView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0BF3334523F1CF9E00FA5247 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0BF3334623F1CF9E00FA5247 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0BF3334A23F1CF9E00FA5247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = MetalRenderer/Rendering/Common.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0BF3334B23F1CF9E00FA5247 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = MetalRenderer/Rendering/Common.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		0BF3334D23F1CF9E00FA5247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MetalRenderer/MetalRenderer.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MetalRenderer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Mobile\\ Documents/com~apple~CloudDocs/Documents\\ 2/Code/AlphaHedra/libdict-0.2-pre/src",
+					"$(PROJECT_DIR)/MetalRenderer/AlphaHedra/libdict-0.2-pre/src",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Lead.MetalRenderer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0BF3334E23F1CF9E00FA5247 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MetalRenderer/MetalRenderer.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MetalRenderer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Mobile\\ Documents/com~apple~CloudDocs/Documents\\ 2/Code/AlphaHedra/libdict-0.2-pre/src",
+					"$(PROJECT_DIR)/MetalRenderer/AlphaHedra/libdict-0.2-pre/src",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Lead.MetalRenderer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0BF3333723F1CF9A00FA5247 /* Build configuration list for PBXProject "PolyWords" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BF3334A23F1CF9E00FA5247 /* Debug */,
+				0BF3334B23F1CF9E00FA5247 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BF3334C23F1CF9E00FA5247 /* Build configuration list for PBXNativeTarget "PolyWords" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BF3334D23F1CF9E00FA5247 /* Debug */,
+				0BF3334E23F1CF9E00FA5247 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0BF3333423F1CF9A00FA5247 /* Project object */;
+}
