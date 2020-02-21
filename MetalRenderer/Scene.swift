@@ -74,13 +74,12 @@ class Scene {
         }
     }
     
-    final func update(deltaTime: Float) {
+    func update(deltaTime: Float) {
         updateScene(deltaTime: deltaTime)
         uniforms.viewMatrix = camera.viewMatrix
         uniforms.projectionMatrix = camera.projectionMatrix
         
         fragmentUniforms.cameraPosition = camera.position
-        
     }
     
     final func add(node: Node, parent: Node? = nil, renderQ: Bool = true) {

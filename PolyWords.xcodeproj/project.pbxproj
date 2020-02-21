@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B0486BC23FF2A5D00F030F1 /* Title1.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 0B0486BB23FF2A5C00F030F1 /* Title1.mtl */; };
+		0B0486BE23FF2A9200F030F1 /* TitleScene.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B0486BD23FF2A9200F030F1 /* TitleScene.png */; };
 		0B1575FF23FB6C3100E9ECF5 /* MyPolygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1575FE23FB6C3100E9ECF5 /* MyPolygon.swift */; };
 		0B15760123FCB73F00E9ECF5 /* TrackBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B15760023FCB73E00E9ECF5 /* TrackBall.swift */; };
 		0B16083C23F46C1000659644 /* train-color.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B16083B23F46C1000659644 /* train-color.png */; };
@@ -141,6 +143,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B0486BB23FF2A5C00F030F1 /* Title1.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Title1.mtl; path = MetalRenderer/Models/Title1.mtl; sourceTree = SOURCE_ROOT; };
+		0B0486BD23FF2A9200F030F1 /* TitleScene.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TitleScene.png; path = MetalRenderer/Models/TitleScene.png; sourceTree = SOURCE_ROOT; };
 		0B1575FE23FB6C3100E9ECF5 /* MyPolygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPolygon.swift; sourceTree = "<group>"; };
 		0B15760023FCB73E00E9ECF5 /* TrackBall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackBall.swift; sourceTree = "<group>"; };
 		0B16083B23F46C1000659644 /* train-color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "train-color.png"; sourceTree = "<group>"; };
@@ -185,7 +189,7 @@
 		0B6F7BE023F441C800DEFA61 /* Renderable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderable.swift; sourceTree = "<group>"; };
 		0B6F7BE323F4561F00DEFA61 /* Mesh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mesh.swift; sourceTree = "<group>"; };
 		0B8D753E23FE436F00B57559 /* Title1.obj */ = {isa = PBXFileReference; lastKnownFileType = text; path = Title1.obj; sourceTree = "<group>"; };
-		0B8D754023FE452200B57559 /* TitleQuad.mtl */ = {isa = PBXFileReference; lastKnownFileType = text; path = TitleQuad.mtl; sourceTree = "<group>"; };
+		0B8D754023FE452200B57559 /* TitleQuad.mtl */ = {isa = PBXFileReference; lastKnownFileType = text; name = TitleQuad.mtl; path = MetalRenderer/Models/TitleQuad.mtl; sourceTree = SOURCE_ROOT; };
 		0B8D754223FE4A3700B57559 /* Quad2.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Quad2.mtl; sourceTree = "<group>"; };
 		0B8D754323FE4A3700B57559 /* Quad2.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Quad2.obj; sourceTree = "<group>"; };
 		0B8D754623FEF8C900B57559 /* Title2.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Title2.obj; sourceTree = "<group>"; };
@@ -193,7 +197,7 @@
 		0B8D754A23FEF94B00B57559 /* Title5.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Title5.obj; sourceTree = "<group>"; };
 		0B8D754C23FEF98500B57559 /* Title4.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Title4.obj; sourceTree = "<group>"; };
 		0BB1978C23F8DC6600676034 /* wood_original.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wood_original.jpg; sourceTree = "<group>"; };
-		0BB1979B23F9EB3A00676034 /* TestPolyhedron.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = TestPolyhedron.mtl; path = ../../../TestPolyhedron.mtl; sourceTree = "<group>"; };
+		0BB1979B23F9EB3A00676034 /* TestPolyhedron.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = TestPolyhedron.mtl; path = ../TestPolyhedron.mtl; sourceTree = SOURCE_ROOT; };
 		0BB1979C23F9EB3A00676034 /* TestPolyhedron.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = TestPolyhedron.obj; path = ../TestPolyhedron.obj; sourceTree = SOURCE_ROOT; };
 		0BBFE0C023F78F0000850FB9 /* Polyhedron.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Polyhedron.swift; sourceTree = "<group>"; };
 		0BBFE0C223F79E6600850FB9 /* BasePolygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePolygon.swift; sourceTree = "<group>"; };
@@ -371,10 +375,12 @@
 		0BEC0E4D23F31EF800B76223 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0B0486BD23FF2A9200F030F1 /* TitleScene.png */,
 				0BB1979B23F9EB3A00676034 /* TestPolyhedron.mtl */,
 				0B8D754023FE452200B57559 /* TitleQuad.mtl */,
 				0BB1979C23F9EB3A00676034 /* TestPolyhedron.obj */,
 				0B8D753E23FE436F00B57559 /* Title1.obj */,
+				0B0486BB23FF2A5C00F030F1 /* Title1.mtl */,
 				0B8D754C23FEF98500B57559 /* Title4.obj */,
 				0B8D754A23FEF94B00B57559 /* Title5.obj */,
 				0B8D754823FEF90B00B57559 /* Title3.obj */,
@@ -617,6 +623,7 @@
 				0BFC49D223FDE3D800A150FB /* N.png in Resources */,
 				0B38EB2123FDB32200CF60D4 /* Alpha5.png in Resources */,
 				0BFC4A3B23FDEFF200A150FB /* Tetrahedron.png in Resources */,
+				0B0486BC23FF2A5D00F030F1 /* Title1.mtl in Resources */,
 				0BEC0E4B23F31ED800B76223 /* train.obj in Resources */,
 				0B38EB2323FDB32200CF60D4 /* blueButton.png in Resources */,
 				0B382F5123FDDCEE00CF60D4 /* U.png in Resources */,
@@ -646,6 +653,7 @@
 				0BFC4A2B23FDEFF200A150FB /* Gyro-Double-Expanded Cuboctahedron.png in Resources */,
 				0BFC4A4723FDEFF200A150FB /* Gyroelongated Pentagonal Cupola.png in Resources */,
 				0BFC4A4423FDEFF200A150FB /* Icosahedron.png in Resources */,
+				0B0486BE23FF2A9200F030F1 /* TitleScene.png in Resources */,
 				0BFC49D523FDE40C00A150FB /* M.png in Resources */,
 				0BFC4A0A23FDED4700A150FB /* Deca-faced Polyhedron.png in Resources */,
 				0BFC49F323FDE8EB00A150FB /* Cube.png in Resources */,
@@ -827,9 +835,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = MetalRenderer/MetalRenderer.entitlements;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 567YC6JLS4;
 				INFOPLIST_FILE = MetalRenderer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -840,8 +849,9 @@
 					"$(USER_LIBRARY_DIR)/Mobile\\ Documents/com~apple~CloudDocs/Documents\\ 2/Code/AlphaHedra/libdict-0.2-pre/src",
 					"$(PROJECT_DIR)/MetalRenderer/AlphaHedra/libdict-0.2-pre/src",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Lead.MetalRenderer;
+				PRODUCT_BUNDLE_IDENTIFIER = Lead.PolyWords;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -853,9 +863,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = MetalRenderer/MetalRenderer.entitlements;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 567YC6JLS4;
 				INFOPLIST_FILE = MetalRenderer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -866,8 +877,9 @@
 					"$(USER_LIBRARY_DIR)/Mobile\\ Documents/com~apple~CloudDocs/Documents\\ 2/Code/AlphaHedra/libdict-0.2-pre/src",
 					"$(PROJECT_DIR)/MetalRenderer/AlphaHedra/libdict-0.2-pre/src",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Lead.MetalRenderer;
+				PRODUCT_BUNDLE_IDENTIFIER = Lead.PolyWords;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;

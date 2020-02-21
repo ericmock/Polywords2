@@ -15,15 +15,19 @@ class Node {
     var children: [Node] = []
     var parent: Node?
     
-    var position = float3(0)
-    var rotation = float3(0)
-    var scaleV = float3(1)
+    var position = SIMD3<Float>(repeating: 0)
+    var rotation = SIMD3<Float>(repeating: 0)
+    var scaleV = SIMD3<Float>(repeating: 1)
+    
+    var initialPosition = SIMD3<Float>(repeating: 0)
+    var initialRotation = SIMD3<Float>(repeating: 0)
+    var initialScaleV = SIMD3<Float>(repeating: 1)
     
     var matrix: float4x4  {
         let translateMatrix = float4x4(translateBy: position)
         let rotationMatrix = float4x4(rotateAboutXYZBy: rotation)
         let scaleMatrix = float4x4(scaleBy: scaleV)
-        return translateMatrix * scaleMatrix * rotationMatrix
+        return translateMatrix * rotationMatrix * scaleMatrix
     }
     
     var worldMatrix: float4x4 {
@@ -58,10 +62,10 @@ class Node {
         if let matrix = matrix {
             worldMatrix = worldMatrix * matrix
         }
-        var lowerLeft = float4(boundingBox.minBounds.x, 0, boundingBox.minBounds.z, 1)
+        var lowerLeft = SIMD4<Float>(boundingBox.minBounds.x, 0, boundingBox.minBounds.z, 1)
         lowerLeft = worldMatrix * lowerLeft
         
-        var upperRight = float4(boundingBox.maxBounds.x, 0, boundingBox.maxBounds.z, 1)
+        var upperRight = SIMD4<Float>(boundingBox.maxBounds.x, 0, boundingBox.maxBounds.z, 1)
         upperRight = worldMatrix * upperRight
         
         return Rect(x: lowerLeft.x,

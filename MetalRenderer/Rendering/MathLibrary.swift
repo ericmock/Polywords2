@@ -112,6 +112,16 @@ extension float4x4 {
         self = rotationX * rotationY * rotationZ
     }
     
+    init(rotateAboutXYZBy angle: SIMD3<Float>, aboutPoint: SIMD3<Float>) {
+        let translate1 = float4x4(translateBy: aboutPoint)
+        let translate2 = -translate1
+
+        let rotationX = float4x4(rotateAboutXBy: angle.x)
+        let rotationY = float4x4(rotateAboutYBy: angle.y)
+        let rotationZ = float4x4(rotateAboutZBy: angle.z)
+        self = translate2 * rotationX * rotationY * rotationZ * translate1
+    }
+    
     init(rotateAboutYXZBy angle: SIMD3<Float>) {
         let rotationX = float4x4(rotateAboutXBy: angle.x)
         let rotationY = float4x4(rotateAboutYBy: angle.y)
