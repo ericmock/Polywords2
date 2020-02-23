@@ -28,7 +28,6 @@
 		0B38EAFF23FD756300CF60D4 /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B38EAFE23FD756300CF60D4 /* AppController.swift */; };
 		0B38EB0123FD785C00CF60D4 /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B38EB0023FD785C00CF60D4 /* Words.swift */; };
 		0B38EB0323FD902100CF60D4 /* SQLiteDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B38EB0223FD902100CF60D4 /* SQLiteDatabase.swift */; };
-		0B38EB0623FDB2B300CF60D4 /* data.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0B38EB0523FDB2B300CF60D4 /* data.sqlite */; };
 		0B38EB1823FDB32200CF60D4 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B38EB0723FDB2CB00CF60D4 /* Icon.png */; };
 		0B38EB1923FDB32200CF60D4 /* JumpToLevel.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B38EB0823FDB2D000CF60D4 /* JumpToLevel.png */; };
 		0B38EB1A23FDB32200CF60D4 /* bamboo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B38EB0923FDB2D400CF60D4 /* bamboo.png */; };
@@ -42,7 +41,6 @@
 		0B38EB2223FDB32200CF60D4 /* whiteButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B38EB1123FDB30200CF60D4 /* whiteButton.png */; };
 		0B38EB2323FDB32200CF60D4 /* blueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B38EB1223FDB30900CF60D4 /* blueButton.png */; };
 		0B38EB2423FDB32200CF60D4 /* Alpha4.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B38EB1323FDB30E00CF60D4 /* Alpha4.png */; };
-		0B38EB2523FDB32200CF60D4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B38EB1423FDB30E00CF60D4 /* Info.plist */; };
 		0B38EB2623FDB32200CF60D4 /* wordlist.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0B38EB1523FDB31500CF60D4 /* wordlist.sqlite */; };
 		0B38EB2723FDB32200CF60D4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B38EB1623FDB31B00CF60D4 /* Default.png */; };
 		0B38EB2823FDB32200CF60D4 /* HighScores.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B38EB1723FDB32200CF60D4 /* HighScores.png */; };
@@ -59,6 +57,11 @@
 		0B8D754923FEF90B00B57559 /* Title3.obj in Resources */ = {isa = PBXBuildFile; fileRef = 0B8D754823FEF90B00B57559 /* Title3.obj */; };
 		0B8D754B23FEF94B00B57559 /* Title5.obj in Resources */ = {isa = PBXBuildFile; fileRef = 0B8D754A23FEF94B00B57559 /* Title5.obj */; };
 		0B8D754D23FEF98500B57559 /* Title4.obj in Resources */ = {isa = PBXBuildFile; fileRef = 0B8D754C23FEF98500B57559 /* Title4.obj */; };
+		0B96F5E72401D9C500915C39 /* cube.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B96F5E62401D9C500915C39 /* cube.png */; };
+		0B96F5E92401D9ED00915C39 /* BufferProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B96F5E82401D9EA00915C39 /* BufferProvider.swift */; };
+		0B96F5EB2401E1D200915C39 /* data.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0B96F5EA2401E1D200915C39 /* data.sqlite */; };
+		0B96F5ED2402060700915C39 /* MetalTexture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B96F5EC240205FE00915C39 /* MetalTexture.swift */; };
+		0B96F5EF2402089100915C39 /* CrossPlatformImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B96F5EE2402089100915C39 /* CrossPlatformImages.swift */; };
 		0BB1978F23F8DC6700676034 /* wood_original.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0BB1978C23F8DC6600676034 /* wood_original.jpg */; };
 		0BB1979D23F9EB3A00676034 /* TestPolyhedron.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 0BB1979B23F9EB3A00676034 /* TestPolyhedron.mtl */; };
 		0BB1979E23F9EB3A00676034 /* TestPolyhedron.obj in Resources */ = {isa = PBXBuildFile; fileRef = 0BB1979C23F9EB3A00676034 /* TestPolyhedron.obj */; };
@@ -139,7 +142,6 @@
 		0BFC4A4F23FDF91F00A150FB /* TitleIntegrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC4A4E23FDF91F00A150FB /* TitleIntegrator.swift */; };
 		0BFC4A5123FE183000A150FB /* TitleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC4A5023FE182F00A150FB /* TitleScene.swift */; };
 		0BFC4A5223FE1DF200A150FB /* Instance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B16083D23F4AC9E00659644 /* Instance.swift */; };
-		0BFC4A5423FE2E9A00A150FB /* K.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC4A5323FE2E9A00A150FB /* K.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -165,7 +167,6 @@
 		0B38EAFE23FD756300CF60D4 /* AppController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
 		0B38EB0023FD785C00CF60D4 /* Words.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Words.swift; sourceTree = "<group>"; };
 		0B38EB0223FD902100CF60D4 /* SQLiteDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDatabase.swift; sourceTree = "<group>"; };
-		0B38EB0523FDB2B300CF60D4 /* data.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = data.sqlite; path = ../../../AlphaHedra/data.sqlite; sourceTree = "<group>"; };
 		0B38EB0723FDB2CB00CF60D4 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		0B38EB0823FDB2D000CF60D4 /* JumpToLevel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JumpToLevel.png; sourceTree = "<group>"; };
 		0B38EB0923FDB2D400CF60D4 /* bamboo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bamboo.png; sourceTree = "<group>"; };
@@ -179,7 +180,6 @@
 		0B38EB1123FDB30200CF60D4 /* whiteButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteButton.png; sourceTree = "<group>"; };
 		0B38EB1223FDB30900CF60D4 /* blueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueButton.png; sourceTree = "<group>"; };
 		0B38EB1323FDB30E00CF60D4 /* Alpha4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Alpha4.png; sourceTree = "<group>"; };
-		0B38EB1423FDB30E00CF60D4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../../../AlphaHedra/Info.plist; sourceTree = "<group>"; };
 		0B38EB1523FDB31500CF60D4 /* wordlist.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = wordlist.sqlite; sourceTree = "<group>"; };
 		0B38EB1623FDB31B00CF60D4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		0B38EB1723FDB32200CF60D4 /* HighScores.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HighScores.png; sourceTree = "<group>"; };
@@ -196,6 +196,11 @@
 		0B8D754823FEF90B00B57559 /* Title3.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Title3.obj; sourceTree = "<group>"; };
 		0B8D754A23FEF94B00B57559 /* Title5.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Title5.obj; sourceTree = "<group>"; };
 		0B8D754C23FEF98500B57559 /* Title4.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Title4.obj; sourceTree = "<group>"; };
+		0B96F5E62401D9C500915C39 /* cube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cube.png; sourceTree = "<group>"; };
+		0B96F5E82401D9EA00915C39 /* BufferProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BufferProvider.swift; sourceTree = "<group>"; };
+		0B96F5EA2401E1D200915C39 /* data.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = data.sqlite; path = ../../../../AlphaHedra/data.sqlite; sourceTree = "<group>"; };
+		0B96F5EC240205FE00915C39 /* MetalTexture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalTexture.swift; sourceTree = "<group>"; };
+		0B96F5EE2402089100915C39 /* CrossPlatformImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossPlatformImages.swift; sourceTree = "<group>"; };
 		0BB1978C23F8DC6600676034 /* wood_original.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wood_original.jpg; sourceTree = "<group>"; };
 		0BB1979B23F9EB3A00676034 /* TestPolyhedron.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = TestPolyhedron.mtl; path = ../TestPolyhedron.mtl; sourceTree = SOURCE_ROOT; };
 		0BB1979C23F9EB3A00676034 /* TestPolyhedron.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = TestPolyhedron.obj; path = ../TestPolyhedron.obj; sourceTree = SOURCE_ROOT; };
@@ -279,7 +284,6 @@
 		0BFC4A2023FDEFF200A150FB /* Truncated Icosahedron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Truncated Icosahedron.png"; sourceTree = "<group>"; };
 		0BFC4A4E23FDF91F00A150FB /* TitleIntegrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleIntegrator.swift; sourceTree = "<group>"; };
 		0BFC4A5023FE182F00A150FB /* TitleScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleScene.swift; sourceTree = "<group>"; };
-		0BFC4A5323FE2E9A00A150FB /* K.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = K.png; path = ../../../AlphaHedra/Letters/K.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -306,7 +310,6 @@
 				0BFC49C723FDE28B00A150FB /* H.png */,
 				0B382F4723FDDB6100CF60D4 /* I.png */,
 				0B382F4323FDDA4F00CF60D4 /* J.png */,
-				0BFC4A5323FE2E9A00A150FB /* K.png */,
 				0BFC49CD23FDE33600A150FB /* L.png */,
 				0BFC49CC23FDE30600A150FB /* M.png */,
 				0BFC49D123FDE3D700A150FB /* N.png */,
@@ -346,9 +349,8 @@
 				0B38EB0C23FDB2E400CF60D4 /* lino.png */,
 				0B38EB0A23FDB2D900CF60D4 /* metal.png */,
 				0B38EB0723FDB2CB00CF60D4 /* Icon.png */,
-				0B38EB1423FDB30E00CF60D4 /* Info.plist */,
+				0B96F5EA2401E1D200915C39 /* data.sqlite */,
 				0B38EB1623FDB31B00CF60D4 /* Default.png */,
-				0B38EB0523FDB2B300CF60D4 /* data.sqlite */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -356,6 +358,7 @@
 		0B6F7BE223F4485E00DEFA61 /* Rendering */ = {
 			isa = PBXGroup;
 			children = (
+				0B96F5EC240205FE00915C39 /* MetalTexture.swift */,
 				0BF3335123F1D94800FA5247 /* Shaders.metal */,
 				0BEC0E4723F31B6500B76223 /* Model.swift */,
 				0BEC0E4523F3040A00B76223 /* Extensions.swift */,
@@ -366,6 +369,7 @@
 				0B6F7BE323F4561F00DEFA61 /* Mesh.swift */,
 				0B16083D23F4AC9E00659644 /* Instance.swift */,
 				0BBFE0C023F78F0000850FB9 /* Polyhedron.swift */,
+				0B96F5E82401D9EA00915C39 /* BufferProvider.swift */,
 				0BBFE0C223F79E6600850FB9 /* BasePolygon.swift */,
 				0B1575FE23FB6C3100E9ECF5 /* MyPolygon.swift */,
 			);
@@ -375,6 +379,7 @@
 		0BEC0E4D23F31EF800B76223 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0B96F5E62401D9C500915C39 /* cube.png */,
 				0B0486BD23FF2A9200F030F1 /* TitleScene.png */,
 				0BB1979B23F9EB3A00676034 /* TestPolyhedron.mtl */,
 				0B8D754023FE452200B57559 /* TitleQuad.mtl */,
@@ -420,6 +425,7 @@
 				0B6F7BE223F4485E00DEFA61 /* Rendering */,
 				0BF3333F23F1CF9A00FA5247 /* AppDelegate.swift */,
 				0BF3334123F1CF9A00FA5247 /* ViewController.swift */,
+				0B96F5EE2402089100915C39 /* CrossPlatformImages.swift */,
 				0BD2B9D423FCF922009E869E /* ButtonView.swift */,
 				0B6F7BDC23F4418100DEFA61 /* Scene.swift */,
 				0BEC0E5423F32BA300B76223 /* Transform.swift */,
@@ -584,9 +590,7 @@
 				0BFC4A0B23FDED4700A150FB /* Cuboctahedron.png in Resources */,
 				0BFC4A2A23FDEFF200A150FB /* Rhombicosidodecahedron.png in Resources */,
 				0BFC4A4A23FDEFF200A150FB /* Truncated Dodecahedron.png in Resources */,
-				0BFC4A5423FE2E9A00A150FB /* K.png in Resources */,
 				0BFC4A4C23FDEFF200A150FB /* Truncated Icosahedron.png in Resources */,
-				0B38EB2523FDB32200CF60D4 /* Info.plist in Resources */,
 				0BF3334423F1CF9E00FA5247 /* Assets.xcassets in Resources */,
 				0B8D754723FEF8C900B57559 /* Title2.obj in Resources */,
 				0B38EB1A23FDB32200CF60D4 /* bamboo.png in Resources */,
@@ -596,7 +600,6 @@
 				0BFC4A2823FDEFF200A150FB /* Strombic Hexecontahedron.png in Resources */,
 				0B8D753F23FE436F00B57559 /* Title1.obj in Resources */,
 				0BFC49C823FDE28C00A150FB /* H.png in Resources */,
-				0B38EB0623FDB2B300CF60D4 /* data.sqlite in Resources */,
 				0BFC4A0823FDED4700A150FB /* Drilled Truncated Cube.png in Resources */,
 				0BF3334723F1CF9E00FA5247 /* Main.storyboard in Resources */,
 				0BFC49D623FDE40C00A150FB /* L.png in Resources */,
@@ -630,6 +633,7 @@
 				0BFC49DF23FDE4FE00A150FB /* R.png in Resources */,
 				0B8D754D23FEF98500B57559 /* Title4.obj in Resources */,
 				0BFC4A0423FDED4700A150FB /* Drilled Truncated Dodecahedron.png in Resources */,
+				0B96F5EB2401E1D200915C39 /* data.sqlite in Resources */,
 				0BFC49C523FDE20600A150FB /* A.png in Resources */,
 				0B382F6223FDDCEE00CF60D4 /* B.png in Resources */,
 				0BFC4A3E23FDEFF200A150FB /* Parabigyrate Rhombicosidodecahedron.png in Resources */,
@@ -651,6 +655,7 @@
 				0BFC49E023FDE4FE00A150FB /* S.png in Resources */,
 				0BFC4A2E23FDEFF200A150FB /* Antiprism-Extended Dodecahedrahedron Ring.png in Resources */,
 				0BFC4A2B23FDEFF200A150FB /* Gyro-Double-Expanded Cuboctahedron.png in Resources */,
+				0B96F5E72401D9C500915C39 /* cube.png in Resources */,
 				0BFC4A4723FDEFF200A150FB /* Gyroelongated Pentagonal Cupola.png in Resources */,
 				0BFC4A4423FDEFF200A150FB /* Icosahedron.png in Resources */,
 				0B0486BE23FF2A9200F030F1 /* TitleScene.png in Resources */,
@@ -671,6 +676,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B38EB0123FD785C00CF60D4 /* Words.swift in Sources */,
+				0B96F5ED2402060700915C39 /* MetalTexture.swift in Sources */,
 				0BEC0E4623F3040A00B76223 /* Extensions.swift in Sources */,
 				0B6F7BDB23F43F5A00DEFA61 /* Node.swift in Sources */,
 				0BEC0E4F23F32A2400B76223 /* MathLibrary.swift in Sources */,
@@ -692,7 +698,9 @@
 				0BBFE0C323F79E6600850FB9 /* BasePolygon.swift in Sources */,
 				0B1575FF23FB6C3100E9ECF5 /* MyPolygon.swift in Sources */,
 				0BEC0E5723F337C000B76223 /* Camera.swift in Sources */,
+				0B96F5E92401D9ED00915C39 /* BufferProvider.swift in Sources */,
 				0B6F7BDD23F4418100DEFA61 /* Scene.swift in Sources */,
+				0B96F5EF2402089100915C39 /* CrossPlatformImages.swift in Sources */,
 				0BBFE0C123F78F0000850FB9 /* Polyhedron.swift in Sources */,
 				0BD2B9D523FCF922009E869E /* ButtonView.swift in Sources */,
 			);

@@ -10,23 +10,21 @@ import Foundation
 import MetalKit
 
 class Model: Node {
+    
+ //   var bufferProvider:BufferProvider
 
     let meshes: [Mesh]
-//    var transform: Transform
-//    var instanceCount: Int
-//    var instanceBuffer: MTLBuffer
     var hasTangents: Bool = false
-//    var modelBuffer: MTLBuffer
-            
+    var texture:MTLTexture?
+    
     init(name: String, findTangents: Bool = false) {
+//        self.texture = texture
         let assetURL = Bundle.main.url(forResource: name, withExtension: "obj")!
         let allocator = MTKMeshBufferAllocator(device: Renderer.device)
-
+        
         let vertexDescriptor = MDLVertexDescriptor.defaultVertexDescriptor(hasTangent: findTangents)
         let asset = MDLAsset(url: assetURL, vertexDescriptor: vertexDescriptor, bufferAllocator: allocator)
         
-//        transform = Transform()
-
         asset.loadTextures()
         
         if findTangents {
@@ -38,103 +36,82 @@ class Model: Node {
             }
             self.hasTangents = true
         }
-
+        
         let (mdlMeshes, mtkMeshes) = try! MTKMesh.newMeshes(asset: asset, device: Renderer.device)
         
         meshes = zip(mdlMeshes, mtkMeshes).map {
             Mesh(mdlMesh: $0.0, mtkMesh: $0.1, findTangents: findTangents)
         }
         
+//        self.bufferProvider = BufferProvider(device: Renderer.device, inflightBuffersCount: 3, sizeOfUniformsBuffer: MemoryLayout<float4x4>.size * 2)
+        let texture = MetalTexture(resourceName: "cube", ext: "png", mipmaped: true)
+//        texture.loadTexture(device: Renderer.device, commandQ: commandQ, flip: true)
+        
+
         super.init()
+
         self.name = name
+        
     }
-    
-//    func render(commandEncoder: MTLRenderCommandEncoder, submesh: Submesh) {
-//        // override in Instances
-//        let mtkSubmesh = submesh.mtkSubmesh
-//
-//        commandEncoder.drawIndexedPrimitives(type: .triangle,
-//                                             indexCount: mtkSubmesh.indexCount,
-//                                             indexType: mtkSubmesh.indexType,
-//                                             indexBuffer: mtkSubmesh.indexBuffer.buffer,
-//                                             indexBufferOffset: mtkSubmesh.indexBuffer.offset)
-//    }
     
     func render(commandEncoder: MTLRenderCommandEncoder, submesh: Submesh) {
-      let mtkSubmesh = submesh.mtkSubmesh
-      commandEncoder.drawIndexedPrimitives(type: .triangle,
-                                           indexCount: mtkSubmesh.indexCount,
-                                           indexType: mtkSubmesh.indexType,
-                                           indexBuffer: mtkSubmesh.indexBuffer.buffer,
-                                           indexBufferOffset: mtkSubmesh.indexBuffer.offset)
+        let mtkSubmesh = submesh.mtkSubmesh
+        commandEncoder.drawIndexedPrimitives(type: .triangle,
+                                             indexCount: mtkSubmesh.indexCount,
+                                             indexType: mtkSubmesh.indexType,
+                                             indexBuffer: mtkSubmesh.indexBuffer.buffer,
+                                             indexBufferOffset: mtkSubmesh.indexBuffer.offset)
     }
-
-//    func render(commandEncoder: MTLRenderCommandEncoder, submesh: Submesh) {
-//        
-//        var pointer = instanceBuffer.contents().bindMemory(to: Instances.self, capacity: instanceCount)
-//
-//        for transform in transforms {
-//            pointer.pointee.modelMatrix = transform.matrix
-//            pointer = pointer.advanced(by: 1)
-//        }
-//        
-//        modelBuffer.modelMatrix = transform.matrix
-//        commandEncoder.setVertexBuffer(modelBuffer, offset: 0, index: 20)
-//        commandEncoder.setRenderPipelineState(submesh.instancedPipelineState)
-//        
-//        let mtkSubmesh = submesh.mtkSubmesh
-//        
-//        commandEncoder.drawIndexedPrimitives(type: .triangle,
-//                                             indexCount: mtkSubmesh.indexCount,
-//                                             indexType: mtkSubmesh.indexType,
-//                                             indexBuffer: mtkSubmesh.indexBuffer.buffer,
-//                                             indexBufferOffset: mtkSubmesh.indexBuffer.offset,
-//                                             instanceCount: instanceCount)
-//
-//    }
+    
 }
 
 extension Model: Renderable {
-  func render(commandEncoder: MTLRenderCommandEncoder,
-              uniforms vertex: Uniforms,
-              fragmentUniforms fragment: FragmentUniforms) {
-    var uniforms = vertex
-    var fragmentUniforms = fragment
-
-    uniforms.modelMatrix = worldMatrix
-    commandEncoder.setVertexBytes(&uniforms,
-                                  length: MemoryLayout<Uniforms>.stride,
-                                  index: 21)
-    commandEncoder.setFragmentBytes(&fragmentUniforms,
-                                   length: MemoryLayout<FragmentUniforms>.stride,
-                                   index: 22)
-    
-    for mesh in meshes {
-      for vertexBuffer in mesh.mtkMesh.vertexBuffers {
+    func render(commandEncoder: MTLRenderCommandEncoder,
+                uniforms vertex: Uniforms,
+                fragmentUniforms fragment: FragmentUniforms) {
         
-        commandEncoder.setVertexBuffer(vertexBuffer.buffer, offset: 0, index: 0)
         
-        for submesh in mesh.submeshes {
-          commandEncoder.setRenderPipelineState(submesh.pipelineState)
-          var material = submesh.material
-          commandEncoder.setFragmentBytes(&material,
-                                          length: MemoryLayout<Material>.stride,
-                                          index: 11)
-          commandEncoder.setFragmentTexture(submesh.textures.baseColor, index: 0)
-          let mtkSubmesh = submesh.mtkSubmesh
-          
-          commandEncoder.setRenderPipelineState(submesh.pipelineState)
-          
-          render(commandEncoder: commandEncoder, submesh: submesh)
+        var uniforms = vertex
+        var fragmentUniforms = fragment
+        
+        uniforms.modelMatrix = worldMatrix
+        commandEncoder.setVertexBytes(&uniforms,
+                                      length: MemoryLayout<Uniforms>.stride,
+                                      index: 21)
+        commandEncoder.setFragmentBytes(&fragmentUniforms,
+                                        length: MemoryLayout<FragmentUniforms>.stride,
+                                        index: 22)
+        
+        for mesh in meshes {
+            for vertexBuffer in mesh.mtkMesh.vertexBuffers {
+                
+//                let uniformBuffer = Renderer.bufferProvider.nextUniformsBuffer(projectionMatrix: uniforms.projectionMatrix, modelViewMatrix: uniforms.modelMatrix)
+                 // 5
+                 //commandEncoder.setVertexBuffer(uniformBuffer, offset: 0, index: 0)
+                 
 
-//          commandEncoder.drawIndexedPrimitives(type: .triangle,
-//                                               indexCount: mtkSubmesh.indexCount,
-//                                               indexType: mtkSubmesh.indexType,
-//                                               indexBuffer: mtkSubmesh.indexBuffer.buffer,
-//                                               indexBufferOffset: mtkSubmesh.indexBuffer.offset)
+               commandEncoder.setVertexBuffer(vertexBuffer.buffer, offset: 0, index: 0)
+                
+                for submesh in mesh.submeshes {
+                    commandEncoder.setRenderPipelineState(submesh.pipelineState)
+                    var material = submesh.material
+//                    commandEncoder.setFragmentBytes(&material,
+//                                                    length: MemoryLayout<Material>.stride,
+//                                                    index: 11)
+                    commandEncoder.setFragmentTexture(submesh.textures.baseColor, index: 0)
+                    
+                    if let samplerState = samplerState {
+                        commandEncoder.setFragmentSamplerState(samplerState, index: 0)
+                    }
+                    
+                    //          let mtkSubmesh = submesh.mtkSubmesh
+                    
+                    commandEncoder.setRenderPipelineState(submesh.pipelineState)
+                    
+                    render(commandEncoder: commandEncoder, submesh: submesh)
+                }
+            }
         }
-      }
+        
     }
-
-  }
 }

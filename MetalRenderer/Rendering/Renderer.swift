@@ -15,14 +15,17 @@ import MetalKit
 //}
 
 class Renderer: NSObject {
-    static var device: MTLDevice!
-    let commandQueue: MTLCommandQueue
+    static var device:MTLDevice!
+    let commandQueue:MTLCommandQueue
 
-    static var library: MTLLibrary!
+    //static var bufferProvider:BufferProvider!
+    var samplerState:MTLSamplerState?
 
-    let depthStencilState: MTLDepthStencilState
+    static var library:MTLLibrary!
+
+    let depthStencilState:MTLDepthStencilState
         
-    weak var scene: Scene?
+    weak var scene:Scene?
 //    weak var titleScene: TitleScene?
 //    let camera = ArcballCamera()
     
@@ -43,9 +46,28 @@ class Renderer: NSObject {
 
 //        camera.target = [0, 0.8, 0]
 //        camera.distance = 3
+//        Renderer.bufferProvider = BufferProvider(device: device, inflightBuffersCount: 3, sizeOfUniformsBuffer: MemoryLayout<float4x4>.size * 2)
+
         super.init()
+
+        samplerState = defaultSampler(device: device)
     }
     
+    func defaultSampler(device: MTLDevice) -> MTLSamplerState {
+      let sampler = MTLSamplerDescriptor()
+      sampler.minFilter             = MTLSamplerMinMagFilter.nearest
+      sampler.magFilter             = MTLSamplerMinMagFilter.nearest
+      sampler.mipFilter             = MTLSamplerMipFilter.nearest
+      sampler.maxAnisotropy         = 1
+      sampler.sAddressMode          = MTLSamplerAddressMode.clampToEdge
+      sampler.tAddressMode          = MTLSamplerAddressMode.clampToEdge
+      sampler.rAddressMode          = MTLSamplerAddressMode.clampToEdge
+      sampler.normalizedCoordinates = true
+      sampler.lodMinClamp           = 0
+        sampler.lodMaxClamp           = .greatestFiniteMagnitude
+        return device.makeSamplerState(descriptor: sampler)!
+    }
+
     static func createDepthState() -> MTLDepthStencilState {
         let depthDescriptor = MTLDepthStencilDescriptor()
         depthDescriptor.depthCompareFunction = .less
@@ -62,6 +84,9 @@ extension Renderer: MTKViewDelegate {
     }
     
     func draw(in view: MTKView) {
+//        _ = Renderer.bufferProvider.avaliableResourcesSemaphore.wait(timeout: DispatchTime.distantFuture)
+
+        
         guard let commandBuffer = commandQueue.makeCommandBuffer(),
             let drawable = view.currentDrawable,
             let descriptor = view.currentRenderPassDescriptor,
@@ -69,6 +94,8 @@ extension Renderer: MTKViewDelegate {
                 return
         }
         
+//        commandBuffer.addCompletedHandler { (_) in Renderer.self.bufferProvider.avaliableResourcesSemaphore.signal()}
+
         let commandEncoder = commandBuffer.makeRenderCommandEncoder(descriptor: descriptor)!
         commandEncoder.setDepthStencilState(depthStencilState)
         

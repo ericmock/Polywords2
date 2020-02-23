@@ -8,12 +8,14 @@
 
 import Foundation
 import ModelIO
+import MetalKit
+
 
 class Node {
     var name = "Untitled"
     
     var children: [Node] = []
-    var parent: Node?
+    var parent: Node? = nil
     
     var position = SIMD3<Float>(repeating: 0)
     var rotation = SIMD3<Float>(repeating: 0)
@@ -33,12 +35,19 @@ class Node {
     var worldMatrix: float4x4 {
         if let parent = parent {
             return parent.worldMatrix * matrix
+        } else {
+            parent = nil
         }
         return matrix
     }
     
     var boundingBox = MDLAxisAlignedBoundingBox()
-    
+    var samplerState:MTLSamplerState? = nil
+
+    init() {
+        samplerState = defaultSampler(device: Renderer.device)
+
+    }
     
     final func add(childNode: Node) {
         children.append(childNode)
@@ -73,5 +82,21 @@ class Node {
                     width: upperRight.x - lowerLeft.x,
                     height: upperRight.z - lowerLeft.z)
     }
+
+    func defaultSampler(device: MTLDevice) -> MTLSamplerState {
+        let sampler = MTLSamplerDescriptor()
+        sampler.minFilter             = MTLSamplerMinMagFilter.nearest
+        sampler.magFilter             = MTLSamplerMinMagFilter.nearest
+        sampler.mipFilter             = MTLSamplerMipFilter.nearest
+        sampler.maxAnisotropy         = 1
+        sampler.sAddressMode          = MTLSamplerAddressMode.clampToEdge
+        sampler.tAddressMode          = MTLSamplerAddressMode.clampToEdge
+        sampler.rAddressMode          = MTLSamplerAddressMode.clampToEdge
+        sampler.normalizedCoordinates = true
+        sampler.lodMinClamp           = 0
+        sampler.lodMaxClamp           = .greatestFiniteMagnitude
+        return device.makeSamplerState(descriptor: sampler)!
+    }
     
+
 }
